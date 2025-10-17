@@ -2,11 +2,11 @@ img {
   -webkit-user-drag: none;
   pointer-events: none;
   -moz-user-select: none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
 
-   -ms-user-select: none;
-   user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .member-photo {
@@ -15,4 +15,10 @@ img {
   object-fit: cover;
   border-radius: 50%;
   flex-shrink: 0;
+}
+
+td {
+  max-width: 10vw;
+  word-break: break-word;
+  white-space: normal;
 }
