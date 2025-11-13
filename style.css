@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 img {
   -webkit-user-drag: none;
   pointer-events: none;
@@ -10,11 +14,11 @@ img {
 }
 
 .member-photo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  flex-shrink: 0;
+  margin-right: 1rem;
 }
 
 td {
@@ -22,3 +26,89 @@ td {
   word-break: break-word;
   white-space: normal;
 }
+.row.position-relative {
+  position: relative;
+}
+
+.full-width-bar {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  width: 70%;
+  height: 10px;
+  background-color: #007bff;
+  transform: translateY(-50%);
+  z-index: 0;
+  border-radius: 6px;
+}
+
+.section-title {
+  position: relative;
+  font-family: monospace;
+  font-size: 8rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  z-index: 1;
+  color: #007bff;
+  text-align: right;
+}
+
+.full-width-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 10%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  transform: skewX(-60deg);
+  animation: slide-right 30s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes slide-right {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.team-row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.team-row > .col {
+  position: relative;
+}
+
+.team-row > .col::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: calc(100% + 30px);
+  height: 60%;
+  transform: translateY(30%);
+  background-color: #007bff;
+  z-index: 0;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  background-color: #e8e8e8;
+  border-color: #e8e8e8;
+  border-radius: 0;
+  /* box-shadow: 0 4px 12px #bababa; */
+}
+
+.card-title {
+  font-weight: 600;
+  color: #090C33;
+}
+
