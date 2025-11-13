@@ -62,7 +62,7 @@ td {
   height: 100%;
   background-color: rgb(255, 255, 255);
   transform: skewX(-60deg);
-  animation: slide-right 30s ease-in-out infinite;
+  animation: slide-right 30s linear infinite;
   z-index: 1;
   pointer-events: none;
 }
@@ -101,8 +101,8 @@ td {
 .card {
   position: relative;
   z-index: 1;
-  background-color: #e8e8e8;
-  border-color: #e8e8e8;
+  background-color: #f1f1f1;
+  border-color: #f1f1f1;
   border-radius: 0;
   /* box-shadow: 0 4px 12px #bababa; */
 }
