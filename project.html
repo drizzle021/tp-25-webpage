@@ -2,61 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Team 25</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
-                <li class="nav-item"><a class="nav-link" href="meetings.html">Meetings</a></li>
-            </ul>
-            </div>
-        </div>
-    </nav>
-   <div class="container py-5">
-    <h2 class="mb-4">Project Overview</h2>
-    <div class="row g-4 mb-2">
-      <div class="col-md">
-
-        <div class="card">
-          <div class="card-body">
-            <p class="card-text">Topic: Platforma pre výskum vizuálnej pozornost</p>
-            <p class="card-text">Acronym: PVVP</p>
-            <p class="card-text">Team Leader: Ing. Peter Kapec, PhD.</p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Team 25</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+              <li class="nav-item"><a class="nav-link" href="meetings.html">Meetings</a></li>
+          </ul>
           </div>
-        </div>
-
       </div>
+  </nav>
 
+  <div class="container-fluid py-5">
+    <div class="position-relative">
+      <h2 class="section-title text-end">Project overview</h2>
+      <div class="full-width-bar"></div>
     </div>
-    
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card border-info">
+  </div>
+
+
+
+  <section class="container py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="bg-primary text-white rounded p-4 shadow">
+          <h2 class="fw-bold mb-3">PVVP: Visual Attention Research Platform</h2>
+          <p class="mb-2"><i class="bi bi-lightbulb-fill me-2"></i><strong>Topic:</strong> Platforma pre výskum vizuálnej pozornosti</p>
+          <p class="mb-2"><i class="bi bi-lightning-charge-fill me-2"></i></i><strong>Acronym:</strong> PVVP</p>
+          <p class="mb-0"><i class="bi bi-person-fill me-2"></i><strong>Team Leader:</strong> Ing. Peter Kapec, PhD.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card border-0 shadow-sm h-100">
           <div class="card-body">
-            <h5 class="card-title">Problem</h5>
-            <p class="card-text">problem desc.</p>
+            <h4 class="card-title mb-3">What We're Building</h4>
+            <p class="card-text">
+              The project aims to build a cloud platform for analyzing and visualizing eye-tracking data to evaluate saliency models. Designed for researchers and UX professionals, the system automates supports comparative model evaluation with metrics, graphs and visualizations          
+            </p>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card border-success">
-          <div class="card-body">
-            <h5 class="card-title">Solution</h5>
-            <p class="card-text">solution desc.</p>
-          </div>
-        </div>
+    </div>
+  </section>
+
+
+  <div class="container py-5">
+    <h2 class="mb-4 text-center fw-500">Used Technologies</h2>
+    <div class="d-flex justify-content-center align-items-center flex-wrap gap-5">
+      <div class="text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue.js" height="60" class="my-2">
+        <div>Vue.js</div>
+      </div>
+      <div class="text-center">
+        <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI" height="60" class="my-2">
+        <div>FastAPI</div>
+      </div>
+      <div class="text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" height="60" class="my-2">
+        <div>PostgreSQL</div>
+      </div>
+      <div class="text-center">
+        <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" height="60" class="my-2">
+        <div>Docker</div>
+      </div>
+      <div class="text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" height="60" class="my-2">
+        <div>Kubernetes</div>
       </div>
     </div>
   </div>
+
 </body>
 </html>

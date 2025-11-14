@@ -30,27 +30,26 @@ td {
   position: relative;
 }
 
-.full-width-bar {
-  position: absolute;
-  top: 75%;
-  left: 0;
-  width: 70%;
-  height: 10px;
-  background-color: #007bff;
-  transform: translateY(-50%);
-  z-index: 0;
-  border-radius: 6px;
-}
-
 .section-title {
   position: relative;
   font-family: monospace;
-  font-size: 8rem;
+  font-size: clamp(2rem, 8vw, 8rem);
   font-weight: bold;
   padding: 0.5rem 1rem;
-  z-index: 1;
   color: #007bff;
-  text-align: right;
+  z-index: 2;
+}
+
+.full-width-bar {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0;
+  height: 10px;
+  width: 100%;
+  background-color: #007bff;
+  border-radius: 6px;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .full-width-bar::after {
@@ -60,10 +59,9 @@ td {
   left: -10%;
   width: 10%;
   height: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   transform: skewX(-60deg);
   animation: slide-right 30s linear infinite;
-  z-index: 1;
   pointer-events: none;
 }
 
@@ -76,6 +74,7 @@ td {
   }
 }
 
+
 .team-row {
   display: flex;
   flex-wrap: wrap;
@@ -84,18 +83,6 @@ td {
 
 .team-row > .col {
   position: relative;
-}
-
-.team-row > .col::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -15px;
-  width: calc(100% + 30px);
-  height: 60%;
-  transform: translateY(30%);
-  background-color: #007bff;
-  z-index: 0;
 }
 
 .card {
@@ -112,3 +99,8 @@ td {
   color: #090C33;
 }
 
+@media (max-width: 576px) {
+  .full-width-bar {
+    bottom: -0.5rem;
+  }
+}
